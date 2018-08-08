@@ -1,4 +1,3 @@
-
 window.jQuery = function (nodeOrSelector) {
     let nodes = {}
     if (typeof nodeOrSelector === 'string') {
@@ -46,9 +45,54 @@ window.jQuery = function (nodeOrSelector) {
     }
 
 
-
     return nodes;
 }
+
+window.jQuery.ajax = function (options) {
+    let url;
+    if (arguments.length === 1) {
+        url = options.url;
+    } else if (arguments.length === 2) {
+        url = arguments[0];
+        options = arguments[1];
+    }
+
+
+    let method = options.method;
+    let body = options.body;
+    let successFn = options.successFn;
+    let failFn = options.failFn;
+    let headers = options.headers;
+
+    let request = new XMLHttpRequest();
+
+    for (let key in headers) {
+        let value = headers[key];
+        request.setRequestHeader(key, value);
+    }
+
+    request.onreadystatechange = () => {
+        if (request.readyState === 4) {
+            console.log("加载完成");
+            if (request.status >= 200) {
+                console.log("请求完成");
+                console.log(request.responseText);
+                console.log(request.getAllResponseHeaders());
+                let parseObject = window.JSON.parse(request.responseText);
+                console.log(typeof parseObject);
+                console.log(parseObject);
+                successFn.call(undefined, request.responseText);
+            } else if (request.status >= 400) {
+                console.log("请求失败");
+                failFn.call(undefined, request);
+            }
+        }
+        console.log(request.readyState);
+    };
+
+    request.open(method, url);
+    request.send(body);
+};
 
 var nodes2 = jQuery("ul>li")
 console.log(nodes2)
