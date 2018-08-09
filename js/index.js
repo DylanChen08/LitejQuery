@@ -74,7 +74,7 @@ window.jQuery.ajax = function (options) {
     request.onreadystatechange = () => {
         if (request.readyState === 4) {
             console.log("加载完成");
-            if (request.status >= 200) {
+            if (request.status >= 200 && request.status < 300) {
                 console.log("请求完成");
                 console.log(request.responseText);
                 console.log(request.getAllResponseHeaders());
