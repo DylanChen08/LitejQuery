@@ -3,7 +3,7 @@
 
 - [2021重制版jQuery源码](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/jquery.js)
 
-- [2018版jQuery源码](https://dylanchen08.github.io/Simulate-jQuery/blob/master/js/index.js)
+- [2018版jQuery源码](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/index.js)
 
 - [2018版jQuery源码-promise版](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/promise.js)
 
