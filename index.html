@@ -14,17 +14,51 @@
 </head>
 
 <body>
-<ul>
-    <li id="item1">选项1</li>
-    <li id="item2">选项1</li>
-    <li id="item3">选项1</li>
-    <li id="item4">选项1</li>
-    <li id="item5">选项1</li>
-</ul>
+    <ul>
+        <li id="item1">选项1</li>
+        <li id="item2">选项1</li>
+        <li id="item3">选项1</li>
+        <li id="item4">选项1</li>
+        <li id="item5">选项1</li>
+    </ul>
+    <div class="test">test api </div>
+
+
+    <div class="test">
+        你好1
+        <div class="child">child1</div>
+        <div class="child">child2</div>
+        <div class="child">child3</div>
+    </div>
+    <div class="test">
+        你好2
+        <div class="child">child2</div>
+        <div class="child">child3</div>
+    </div>
+    <div class="test">
+        你好3
+        <div class="child">child3</div>
+    </div>
+    <div id="container">
+        container
+    </div>
+
 </body>
 
-
+<!-- 
 <script src="./js/index.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script> -->
+
+<script src="./js/jquery.js"></script>
+<script>
+    //    jQuery('.test')
+    //    .find('.child')
+    //    .addClass('red')
+    //    .end()
+    //    .addClass('oooo')
+
+    const x = jQuery('.test')
+    x.parent().print()
+</script>
 
 </html>
