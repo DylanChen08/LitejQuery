@@ -8,7 +8,7 @@
 - [2018版jQuery源码-promise版](https://github.com/DylanChen08/Simulate-jQurery/blob/master/js/promise.js)
 
 
-##💡 Why do this?
+## 💡 Why do this?
 2018年的时候尝试以jQuery的思想，自己手写一个类似的实现，如今2021年了，尝试将其改进。
 
 ## 🚀Techniques
