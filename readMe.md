@@ -1,11 +1,11 @@
 # Simulate-jQuery(仿制jQuery)
-- [2021重制版jQuery](https://dylanchen08.github.io/Simulate-jQurery/)
+- [2021重制版jQuery](https://dylanchen08.github.io/Simulate-jQuery/)
 
-- [2021重制版jQuery源码](https://github.com/DylanChen08/Simulate-jQurery/blob/master/js/jquery.js)
+- [2021重制版jQuery源码](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/jquery.js)
 
-- [2018版jQuery源码](https://dylanchen08.github.io/Simulate-jQurery/)
+- [2018版jQuery源码](https://dylanchen08.github.io/Simulate-jQuery/)
 
-- [2018版jQuery源码-promise版](https://github.com/DylanChen08/Simulate-jQurery/blob/master/js/promise.js)
+- [2018版jQuery源码-promise版](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/promise.js)
 
 
 ## 💡 Why do this?
