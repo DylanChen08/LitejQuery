@@ -1,4 +1,4 @@
-# Simulate-jQuery(仿制jQuery)
+# 实现jQuery
 - [2021重制版jQuery](https://dylanchen08.github.io/Simulate-jQuery/)
 
 - [2021重制版jQuery源码](https://github.com/DylanChen08/Simulate-jQuery/blob/master/js/jquery.js)
